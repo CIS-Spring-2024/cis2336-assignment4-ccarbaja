@@ -103,46 +103,28 @@ a {
 }
 }
 
-
-.menufilter button{
-    background-color: rgb(180, 180, 180);
-    color:#D03731;
-    font-size:40px;
-    border:none;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px 15px;
+.prices {
+    color:green;
 }
 
-@media screen and (max-width:600px){
+/*Home Page Specific Style*/
 
+.homepagetables {
+    width:50%;
+    float:left;
+    padding: 20px 20px;
+    font-size:25px;
 }
-
-/* START OF Page Specific Style */
-
-.profilepicture {
-  
-    width:15%;
-    height:15%;
-    padding: 10px 10px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius:85%;
-    margin-top:auto;
-
-    img{
+.eventstable {
+        border-collapse: collapse;
         width:100%;
-        height:100%;
-    }
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    font-size:20px;
-    border-collapse: collapse;
-    width:35%;
+.menuheader {
+    text-align: center;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#D03731;
 }
 
 tr {
@@ -153,6 +135,30 @@ td {
     text-align: center;
 }
 
-table, tr, th, td {
+.eventstable, tr, th, td {
         border: 1px solid black;
 }
+
+.menupics {
+    width:220px;
+    height:180px;
+}
+
+.menupics img {
+    width: 100%;
+    height: auto;
+}
+
+.eventslist {
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.prices {
+    font-size: 25px;
+    span {
+        color:green;
+    }
+}
+
+/*End of Homepage Specific Style*/

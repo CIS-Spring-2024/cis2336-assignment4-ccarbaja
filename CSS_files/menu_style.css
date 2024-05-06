@@ -259,59 +259,9 @@ a {
 
 }
 
-.homepagetables {
-    width:50%;
-    float:left;
-    padding: 20px 20px;
-    font-size:25px;
-}
-table {
-        border-collapse: collapse;
-        width:100%;
-}
-
-.menuheader {
-    text-align: center;
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#D03731;
-}
-
-tr {
-    text-align: center;
-}
-
-td {
-    text-align: center;
-}
-
-table, tr, th, td {
-        border: 1px solid black;
-}
-
-.menupics {
-    width:220px;
-    height:180px;
-}
-
-.menupics img {
-    width: 100%;
-    height: auto;
-}
-
-.eventslist {
-    list-style: none;
-    padding: 10px 10px;
-}
-
-.prices {
-    font-size: 25px;
-    span {
-        color:green;
-    }
-}
 
 
+/*Help page Specific Style*/
 #needhelp {
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -348,17 +298,23 @@ table, tr, th, td {
     height: auto;
 }
 
-.hours {
-    width:50%;
+/*End of Help page Specific Style*/
+
+/*Hours and Location page Specific Style*/
+
+.hours-list {
+    width:45%;
     float:left;
     padding: 20px 20px;
+    padding-right:10px;
     font-size:25px;
     ul { list-style: none; }
 }
 
 .locationpics {
-    width:420px;
+    width:50%;
     height:350px;
+    padding-right:10px;
 }
 
 .locationpics img {
@@ -366,38 +322,16 @@ table, tr, th, td {
     height: auto;
 }
 
+/*End of Hours and Location page Specific Style*/
 
-.profilepicture {
-  
-    width:15%;
-    height:20%;
-    padding: 10px 10px;
+.contact-us-info {
     display:block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius:90%;
+    padding-left:20px;
+    font-size: 25px;
 
-    img{
-        width:100%;
-    }
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    font-size:20px;
-    border-collapse: collapse;
-    width:35%;
-}
-
-tr {
-    text-align: center;
-}
-
-td {
-    text-align: center;
-}
-
-table, tr, th, td {
-        border: 1px solid black;
+.contact-us-label {
+    color:#D03731;
+    font-weight: 800;
 }
