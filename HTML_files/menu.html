@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <header>
+            <link href="../CSS_files/menu_style.css" rel="stylesheet">
+            <title>Our Menu</title>
+            <img class="logopic" src="../images/uhslcafeterialogoupdated.jpeg" alt="UHSL Honestly Amazing Cafeteria Logo" width="20%" height="100%">
+            <p>UHSL Honestly <em>Amazing</em> Cafeteria</p>
+        </header>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./home_page.html">Home</a></li>
+                <li><a href="./menu.html" class="active">Menu</a></li>
+                <li><a href="./help_page.html"> Help </a>
+                    <ul class="dropdown">
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./contactus.html">Contact Us</a></li>
+                        <li><a href="./hours.html">Hours</a></li>
+                    </ul>
+                </li>
+                <li><a href="./about_page.html">About</a>
+                    <ul class="dropdown">
+                        <li><a href="./owner_bio.html">The Owner</a></li>
+                        <li><a href="./ourstaff.html">Our Staff</a></li>
+                        <li><a href="./careers.html">Careers</a></li>
+                    </ul>
+                </li>    
+                <li><a href="./myacct.html">My Account</a></li>
+            </ul>
+        </nav>
+
+        <h3 id="welcomemsg">Click a category to see our menu offerings!</h3>
+<section class="menufilter">
+<ul>
+    <li><button class="menuitem" id="pastabtn">Pasta</button></li>
+    <li><button class="menuitem" id="burgerbtn">Burgers</button></li>
+    <li><button class="menuitem" id="veganbtn">Vegan</button></li>
+    <li><button class="menuitem" id="breakfastbtn">Breakfast</button></li>
+</ul>
+</section>
+
+<main>
+    <section class="menudisplay" id="burgermenu">
+    <div class="currentmenu">
+        <img src="../images/burger_cheeseburger.jpg">
+        <details>
+            <summary><strong>The <em>Amazing</em> Cheeseburger <span class="prices">$14.99</span></strong><br>&starf;Popular&starf;</summary>
+            <p>Our <em>Amazing</em> Cheeseburger has been a staple and a fan favorite at our cafeteria. First timers can always count on a pleasant experience
+                 with our fine cheddar and 95% lean beef patties, smoked for a great tasting burger.
+                *comes with a side of fries topped with sea salt and a side of onion rings.</p>
+        </details>
+        <div class="ordering">
+            <button class="orderbtn" id="cheeseburgerbtn">Add to order</button>
+           <label for="quantity">Quantity</label>
+            <select name="burgerquantity" id="burgerquantity">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="currentmenu">
+        <img src="../images/burger_chickenbaconegg.jpg">
+        <details>
+            <summary><strong>Farmer Charmer <span class="prices">$13.99</span></strong></summary>
+            <p>The Farmer Charmer comes with a butter glazed bun topped with sesame seeds, grilled chicken, 3 bacon strips, and 2 eggs any style. All of these ingredients come
+                from our local farms.
+                *comes with a side of potato wedges and guacamole dip.</p>
+        </details>
+        <div class="ordering">
+            <button class="orderbtn" id="farmercharmbtn">Add to order</button>
+           <label for="quantity">Quantity</label>
+            <select name="farmercharmquantity" id="farmercharmquantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="currentmenu">
+        <img src="../images/burger_sloppyjoe.jpg">
+        <details>
+            <summary><strong>The Joe <span class="prices">$10.99</span></strong></summary>
+            <p>The Joe comes with a butter glazed bun and 95% lean ground beef. Our special in house sloppy joe sauce makes all the difference, here.
+                *comes with a side of coleslaw and mashed potatoes.</p>
+        </details>
+        <div class="ordering">
+        <button class="orderbtn" id="joebtn">Add to order</button>
+       <label for="quantity">Quantity</label>
+        <select name="joequantity" id="joequantity">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    </div>
+    </section>
+
+    <section class="menudisplay" id="pastamenu">
+        <div class="currentmenu">
+            <img src="../images/pasta_fettuccine.jpg">
+            <details>
+                <summary><strong>Fettuccine Alfredo <span class="prices">$12.99</span></strong></summary>
+                <p>Our fettuccine alfredo comes with a family secret homemade alfredo sauce that has won numerous awards.
+                    *comes with a side of mashed potatoes and broccoli.</p>
+            </details>
+            <div class="ordering">
+                <button class="orderbtn" id="alfredobtn">Add to order</button>
+               <label for="quantity">Quantity</label>
+                <select name="alfredoquantity" id="alfredoquantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="currentmenu">
+            <img src="../images/pasta_lasagna.jpg">
+            <details>
+                <summary><strong>Beef Lasagna <span class="prices">$11.99</span></strong><br>&starf;Popular&starf;</summary>
+                <p>Our beef lasagna is topped with feta and mozzarella cheese.
+                    *comes with a asparagus and corn.</p>
+            </details>
+            <div class="ordering">
+                <button class="orderbtn" id="lasagnabtn">Add to order</button>
+               <label for="quantity">Quantity</label>
+                <select name="lasagnaquantity" id="lasagnaquantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="currentmenu">
+            <img src="../images/pasta_spaghetti.jpg">
+            <details>
+                <summary><strong>Spaghetti <span class="prices">$12.99</span></strong><br>&starf;Popular&starf;</summary>
+                <p>Our spaghetti comes with garlic and basil infused tomato sauce.
+                    *comes with corn and a loaded baked potato.</p>
+            </details>
+            <div class="ordering">
+                <button class="orderbtn" id="spaghettibtn">Add to order</button>
+               <label for="quantity">Quantity</label>
+                <select name="spaghettiquantity" id="spaghettiquantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        </section>
+
+        <section class="menudisplay" id="veganmenu">
+            <div class="currentmenu">
+                <img src="../images/vegan_pizzaoliveartichoke.jpg">
+                <details>
+                    <summary><strong>Olive and Artichoke Pizza <span class="prices">$14.99</span></strong><br>&starf;Popular&starf;</summary>
+                    <p>Our signature vegan dish is a pizza with olives and artichoke. Toppings can be swapped.
+                        *comes with breadsticks.</p>
+                </details>
+                <div class="ordering">
+                    <button class="orderbtn" id="pizzabtn">Add to order</button>
+                   <label for="quantity">Quantity</label>
+                    <select name="pizzaquantity" id="pizzaquantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="currentmenu">
+                <img src="../images/vegan_salad.jpg">
+                <details>
+                    <summary><strong>Vegetable Salad <span class="prices">$9.50</span></strong></summary>
+                    <p>This vegetable salad includes avocados, tomatoes, spinash, olives, and croutons.
+                        *comes with your choice of dressing.</p>
+                </details>
+                <div class="ordering">
+        <button class="orderbtn" id="saladbtn">Add to order</button>
+       <label for="quantity">Quantity</label>
+        <select name="saladquantity" id="saladquantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+            </div>
+
+            <div class="currentmenu">
+                <img src="../images/vegan_tofurice.jpg">
+                <details>
+                    <summary><strong> Tofu Rice with Broccoli <span class="prices">$11.79</span></strong></summary>
+                    <p>This fan favorite tofu dish comes with delicious rice and steamed broccoli.
+                        *comes with your choice of dip.</p>
+                </details>
+                <div class="ordering">
+        <button class="orderbtn" id="tofubtn">Add to order</button>
+       <label for="quantity">Quantity</label>
+        <select name="tofuquantity" id="tofuquantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+            </div>
+            </section>
+
+            <section class="menudisplay" id="breakfastmenu">
+                <div class="currentmenu">
+                    <img src="../images/breakfast_chickentenderwaffles.jpg">
+                    <details>
+                        <summary><strong>Fried Chicken Tenders with Waffles <span class="prices">$13.99</span></strong><br>&starf;Popular&starf;</summary>
+                        <p>Our fried chicken tenders and waffles are our most popular breakfast dish for a reason. Top them off with our signature style Honestly <em>Amazing</em> syrup.
+                            *comes with a side of buttered toast.</p>
+                    </details>
+                    <div class="ordering">
+                        <button class="orderbtn" id="chickenwafflesbtn">Add to order</button>
+                       <label for="quantity">Quantity</label>
+                        <select name="chickenwafflesquantity" id="chickenwafflesquantity" value="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="currentmenu">
+                    <img src="../images/breakfast_omelette.jpg">
+                    <details>
+                        <summary><strong>4 Egg Omelette <span class="prices">$10.99</span></strong></summary>
+                        <p>Pick your own spices and add any additional protein ($1.50 extra) to your 4 egg any way you want it omelette.
+                            *comes with a side of hash browns and buttered toast.</p>
+                    </details>
+                    <div class="ordering">
+                        <button class="orderbtn" id="omelettebtn">Add to order</button>
+                       <label for="quantity">Quantity</label>
+                        <select name="omelettequantity" id="omelettequantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="currentmenu">
+                    <img src="../images/breakfast_sausageburrito.jpg">
+                    <details>
+                        <summary><strong>Sausage Burrito <span class="prices">$8.99</span></strong></summary>
+                        <p>Our sausage burritos are wrapped in keto friendly tortillas with 3 eggs, tomatoes, and green peppers.
+                            *comes with a side of hashbrowns and buttered toast.</p>
+                    </details>
+                    <div class="ordering">
+                        <button class="orderbtn" id="burritobtn">Add to order</button>
+                       <label for="quantity">Quantity</label>
+                        <select name="burritoquantity" id="burritoquantity">
+                            <option selected="selected" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                
+                </section>
+                <hr>
+                <section class="checkoutcontainer">
+<form id="foodsubmitform" class="foodform" method="POST">
+    <div class="forminput">
+        <h2>Order Contact Info:</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" maxlength="20" minlength="1" autocapitalize="words">
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" maxlength="25" minlength="1" autocapitalize="words">
+    </div>
+    <div class="forminput">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com">
+    </div>
+    <div class="forminput">
+        <label for="phonenum">Phone Number:</label>
+        <input type="tel" id="phonenum" name="phonenum" placeholder="***-***-****" minlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+    <div class="forminput">
+        <p style="text-align: center;">Select a payment method:</p>
+        <input type="radio" id="debitcard" name="payment" value="card">
+        <label for="debitcard">Debit/Credit Card</label>
+        <input type="radio" id="cash" name="payment" value="cash" checked="checked">
+        <label for="cash">Cash at pickup</label>
+    </div>
+    <input type="submit" value="Submit" id="submitbtn">
+</form>
+<summary style="text-align: center;"><h2>Order Summary</h2></summary>
+<div class="ordersummary">
+    <ul>
+        <h2 style="text-align: center;">Food:</h2>
+        <ul class="items-inCart">
+            
+            <li id="itemsInCart1" style="display:none;"><button class="remove">REMOVE</button></li>
+            <li id="itemsInCart2" style="display:none;"></li>
+            <li id="itemsInCart3" style="display:none;"></li>
+            <li id="itemsInCart4" style="display:none;"></li>
+            <li id="itemsInCart5" style="display:none;"></li>
+            <li id="itemsInCart6" style="display:none;"></li>
+            <li id="itemsInCart7" style="display:none;"></li>
+            <li id="itemsInCart8" style="display:none;"></li>
+            <li id="itemsInCart9" style="display:none;"></li>
+            <li id="itemsInCart10" style="display:none;"></li>
+            <li id="itemsInCart11" style="display:none;"></li>
+            <li id="itemsInCart12" style="display:none;"></li>
+        </ul>
+        <li id="taxtotal">Tax: $0.00</li>
+        <li id="ordertotal">Total: $0.00</li>
+    </ul>
+</div>
+</section>
+
+
+</main>
+
+        <script src="../JS_files/menu.js"></script>
+    </body>
+
+    <footer>
+        <p>Follow us on Instagram &#64;HonestlyAmazingCafe and tag us in your pictures taken here using &#35;HonestlyAmazing.</p>
+        <p>Business or Promotion inquiries? Contact us at <a href="mailto:HAbusiness@hacafe.net">HAbusiness@hacafe.net</a>. 2024 Honestly <em>Amazing</em> Cafeteria, All rights reserved.</p>
+        <p>All menu images from <a href="https://www.gettyimages.dk/">GettyImages</a></p>
+    </footer>
+
+</html>
+
+
+
