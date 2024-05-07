@@ -54,6 +54,7 @@ const spaghettiquantity = document.querySelector("#spaghettiquantity");
 let orderTotal = 0;
 let tax = 0;
 let taxTotal=0;
+let theTotal="";
 
 const foodformdisplay = document.querySelector(".checkoutcontainer");
 /*Function to check the quantity of a food item to remove from order form*/
@@ -65,7 +66,6 @@ function checkQuantity(quantity, eleid){
 
 foodsubmitform.addEventListener('submit', function (e) {
     e.preventDefault();
-    validation();
     const loadOrderData = new FormData(foodsubmitform);
     const orderData = new URLSearchParams(loadOrderData);
 
@@ -78,6 +78,11 @@ foodsubmitform.addEventListener('submit', function (e) {
 .then(res => res.json())
 .then(data => console.log(data))
 .catch(err => console.log(err));
+
+if(validation() === true) {
+    foodsubmitform.submit();
+    location.href="form_sub.html";
+};
     });
 
 function validation(){
@@ -93,9 +98,7 @@ function validation(){
     return false;
    }
 else {
-alert("Thank you for your order! Your food will be ready in 30-45 minutes.");
 return true;
-location.reload;
 }}
 
 /* Event listeners and functions for the add to order buttons which get the quantity from the quantity select input,
