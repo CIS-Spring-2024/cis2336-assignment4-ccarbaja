@@ -63,11 +63,22 @@ function checkQuantity(quantity, eleid){
     }
 }
 
-foodsubmitform.addEventListener('submit', e => {
-
-
+foodsubmitform.addEventListener('submit', function (e) {
+    e.preventDefault();
     validation();
-});
+    const loadOrderData = new FormData(foodsubmitform);
+    const orderData = new URLSearchParams(loadOrderData);
+
+    console.log([...orderData]);
+
+    fetch('http://httpbin.org/post', {
+        method: "POST",
+        body: orderData,
+})
+.then(res => res.json())
+.then(data => console.log(data))
+.catch(err => console.log(err));
+    });
 
 function validation(){
    const firstNameValue = firstName.value.trim();
